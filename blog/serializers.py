@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 
-class SayHelloSerializer(serializers.Serializers):
+class SayHello(serializers.Serializer):
     name = serializers.CharField(required=False)
-    dob = serializers.DateField(input_formats=['%Y-%m-%d'], required=False)
+    dob = serializers.DateField(input_formats=['%Y-%m-%d'])
 

@@ -21,4 +21,5 @@ from blog.views import say_hello
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/hello', say_hello)
+
 ]
