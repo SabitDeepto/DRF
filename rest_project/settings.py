@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Manage_Call_Center',
     'Manage_Merchant',
-    'test_blog'
+    'Hub',
+    'MyZone',
 
 
 
