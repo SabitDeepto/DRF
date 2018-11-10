@@ -37,10 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # My apps
     'Manage_Call_Center',
     'Manage_Merchant',
     'Hub',
-    'MyZone',
+    'api_test',
+
+
+    # rest app
+    'rest_framework',
 
 
 

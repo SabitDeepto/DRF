@@ -19,13 +19,22 @@ from rest_framework.routers import SimpleRouter
 
 from Manage_Call_Center.views import CreateExecutiveViewSet
 from Manage_Merchant.views import CreateMerchantViewSet
+from api_test.views import ParadigmViewSet, ProgrammerViewSet, LanguageViewSet
 
 router = SimpleRouter()
 router.register('center', CreateExecutiveViewSet, base_name='CreateExecutive')
 router.register('merchant', CreateMerchantViewSet, base_name='CreateMerchant')
+router.register('paradigm', ParadigmViewSet,)
+router.register('programmer', ProgrammerViewSet, )
+router.register('language', LanguageViewSet,)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    path('', include(router.urls)),
+    path('', include(router.urls)),
+    path('', include(router.urls)),
     path('', include(router.urls)),
     path('', include(router.urls)),
 
