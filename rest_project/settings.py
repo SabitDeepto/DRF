@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     # My apps
     'Manage_Call_Center',
     'Hub_Management',
-    'Merchant_Management',
+    'Manage_Merchants',
     'Manage_Ambassador',
     'Manage_Fulfillment_Department',
 

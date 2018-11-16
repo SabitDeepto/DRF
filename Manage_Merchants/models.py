@@ -13,7 +13,7 @@ class CreateMerchant(models.Model):
 
 # Pick up request from merchant to hub
 class PickUp(models.Model):
-    merchant_name = models.OneToOneField(CreateMerchant, on_delete= models.CASCADE, primary_key=True)
+    merchant_name = models.ForeignKey(CreateMerchant, on_delete=models.CASCADE)
     address = models.CharField(max_length=100)
     product_details = models.TextField()
     product_quantity = models.IntegerField()
@@ -28,6 +28,4 @@ class PickUp(models.Model):
     action = models.CharField(max_length=100, choices=COLOR_CHOICES, default='Queue')
 
     def __str__(self):
-        return "{0} | {1}".format(self.address, self.action)
-
-
+        return self.action
