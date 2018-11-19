@@ -17,42 +17,6 @@ class CreateExecutive(models.Model):
         return self.executive_name
 
 
-# signals from User to model
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    city = models.CharField(max_length=100)
-    zip = models.CharField(max_length=100)
-
-    def __str__(self):
-        return '%s' % (self.user)
-
-
-def create_profile(sender, **kwargs):
-    if kwargs['created']:
-        user_profile = UserProfile.objects.create(user=kwargs['instance'])
-
-
-post_save.connect(create_profile, sender=User)
-
-
-# signals from User to model
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    city = models.CharField(max_length=100)
-    zip = models.CharField(max_length=100)
-
-    def __str__(self):
-        return '%s' % (self.user)
-
-
-def create_profile(sender, **kwargs):
-    if kwargs['created']:
-        user_profile = UserProfile.objects.create(user=kwargs['instance'])
-
-
-post_save.connect(create_profile, sender=User)
-
-
 # signals from model to model (merchant to call center )
 
 class HandleRequest(models.Model):
@@ -70,3 +34,4 @@ def create_profile(sender, **kwargs):
 
 
 post_save.connect(create_profile, sender=PickUp)
+
