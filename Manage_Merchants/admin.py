@@ -13,4 +13,3 @@ class PickUpAdmin(admin.ModelAdmin):
 
 admin.site.register(PickUp, PickUpAdmin)
 
-
