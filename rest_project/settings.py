@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'Manage_Merchants',
     'Manage_Ambassador',
     'Manage_Fulfillment_Department',
+    'Sign_Up',
 
 
 
@@ -66,7 +67,7 @@ ROOT_URLCONF = 'rest_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -161,3 +162,6 @@ REST_FRAMEWORK = {
 
 }
 
+STATICFILES_DIRS = [
+os.path.join(BASE_DIR, "static"),
+]
