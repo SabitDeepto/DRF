@@ -8,7 +8,7 @@
 
 Module Name | Operations
 ------------ | -------------
-Manage_Merchants | Create Merchants \ Add pick up request
+Manage_Merchants | Create Merchants  <br> Add pick up request
 Manage_Call_Center | 
 Hub_Management |
 Manage_Ambassador |
