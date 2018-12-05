@@ -8,10 +8,12 @@
 
 Module Name | Operations
 ------------ | -------------
-Manage_Merchants | 
+Manage_Merchants | Create Merchants
+Add pick up request
 Manage_Call_Center | 
 Hub_Management |
 Manage_Ambassador |
 Manage_Fulfillment_Department |
+Buyer_Management |
 
 
