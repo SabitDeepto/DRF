@@ -1,8 +1,17 @@
 # TikTok Project (Running)
 
-## loacalhost/admin
+## admin login (localhost/admin)
  1. Username: deepto
  2. password: password123
 
-## localhost/merchant/
-shows the merchant list
+## Modules in courier service app
+
+Module Name | Operations
+------------ | -------------
+Manage_Merchants | 
+Manage_Call_Center | 
+Hub_Management |
+Manage_Ambassador |
+Manage_Fulfillment_Department |
+
+
