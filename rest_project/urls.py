@@ -6,6 +6,8 @@ from Sign_Up import views
 
 urlpatterns = [
 
+    path('jet/', include('jet.urls', 'jet')),
+    path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     path('admin/', admin.site.urls),
     path('', include('Manage_Merchants.urls')),
     path('signup/', views.signup, name = 'signup'),
