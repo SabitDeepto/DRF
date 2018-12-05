@@ -8,11 +8,11 @@
 
 Module Name | Operations
 ------------ | -------------
-Manage_Merchants | Create Merchants  <br> Add pick up request
-Manage_Call_Center | 
-Hub_Management |
-Manage_Ambassador |
-Manage_Fulfillment_Department |
-Buyer_Management |
+1. Manage_Merchants | Create Merchants  <br> Add pick up request
+2. Manage_Call_Center | 
+3. Hub_Management |
+4. Manage_Ambassador |
+5. Manage_Fulfillment_Department |
+6. Buyer_Management |
 
 
