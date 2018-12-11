@@ -26,3 +26,8 @@ def signup(request):
 
 def hub(request):
     return render(request, 'forms_regular.html')
+
+
+def hub_table(request):
+    return render(request, 'tables_regular.html')
+
