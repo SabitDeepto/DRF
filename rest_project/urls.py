@@ -11,6 +11,16 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('create_hub/', views.hub, name='hub'),
     path('hub_manager/', views.hub_table, name='hub_table'),
+    path('merchant/', views.merchant, name='merchant'),
+    path('pickup/', views.pickup, name='pickup'),
+    path('call_centre_executive/', views.call_centre_executive, name='call_centre_executive'),
+    path('handle_pickup_request/', views.handle_pickup_request, name='handle_pickup_request'),
+
+    path('create_ambassador/', views.create_ambassador, name='create_ambassador'),
+    path('assigned_ambassador/', views.assigned_ambassador, name='assigned_ambassador'),
+
+    path('fulfill_manager/', views.fulfill_manager, name='fulfill_manager'),
+    path('check_order/', views.check_order, name='check_order'),
 
     path('jet/', include('jet.urls', 'jet')),
     path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),

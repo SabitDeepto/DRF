@@ -25,9 +25,41 @@ def signup(request):
 
 
 def hub(request):
-    return render(request, 'forms_regular.html')
+    return render(request, 'forms_regular.html', {'name': 'Hub Registration'})
 
 
 def hub_table(request):
-    return render(request, 'tables_regular.html')
+    return render(request, 'tables_regular.html', {'name': 'Hub'})
+
+
+def merchant(request):
+    return render(request, 'tables_regular.html', {'name': 'Merchant'})
+
+
+def pickup(request):
+    return render(request, 'forms_regular.html', {'name': 'Pick Up Request'})
+
+
+def call_centre_executive(request):
+    return render(request, 'tables_regular.html', {'name': 'Call Centre Executive'})
+
+
+def handle_pickup_request(request):
+    return render(request, 'forms_regular.html', {'name': 'Call Centre Executive Registration'})
+
+
+def create_ambassador(request):
+    return render(request, 'forms_regular.html', {'name': 'ambassador'})
+
+
+def assigned_ambassador(request):
+    return render(request, 'tables_regular.html', {'name': 'ambassador'})
+
+
+def fulfill_manager(request):
+    return render(request, 'forms_regular.html', {'name': 'Fulfill Manager Registration '})
+
+
+def check_order(request):
+    return render(request, 'tables_regular.html', {'name': 'Orders'})
 
