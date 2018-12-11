@@ -19,6 +19,7 @@ ALLOWED_HOSTS = [
 
 
 # Application definition
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 INSTALLED_APPS = [
     'jet.dashboard',
@@ -36,6 +37,7 @@ INSTALLED_APPS = [
     'Manage_Merchants',
     'Manage_Ambassador',
     'Manage_Fulfillment_Department',
+    'crispy_forms',
 
 
 

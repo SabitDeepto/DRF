@@ -24,3 +24,5 @@ def signup(request):
     return render(request, 'registration/signup.html', {'form': form})
 
 
+def hub(request):
+    return render(request, 'forms_regular.html')
