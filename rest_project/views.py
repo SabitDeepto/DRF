@@ -1,15 +1,18 @@
 # from rest_framework import serializers
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
 
 
-def login(request):
-    return render(request, 'auth_login.html')
+def home(request):
+    return render(request, 'index.html')
 
 
 def signup(request):
-    return render(request, 'auth_register.html')
+    form = UserCreationForm()
+    return render(request, 'registration/signup.html', {'form': form})
 
 
-def index(request):
-    return render(request, 'index.html')
+def login(request):
+    return render(request, 'registration/login.html')
+
 
