@@ -43,7 +43,7 @@
                 </div>
                 <div class="onboarding-content with-gradient">
                   <h4 class="onboarding-title">
-                    Example of onboarding screen!
+                    Welcome {{ user.username }} ! to Tiktok Admin
                   </h4>
                   <div class="onboarding-text">
                     This is an example of a multistep onboarding screen, you can use it to introduce your customers to your app, or collect additional information from them before they start using your app.
@@ -279,7 +279,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  {{ user.username }}
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -670,7 +670,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  {{ user.username }}
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -686,7 +686,7 @@
                   </div>
                   <div class="logged-user-info-w">
                     <div class="logged-user-name">
-                      Maria Gomez
+                      {{ user.username }}
                     </div>
                     <div class="logged-user-role">
                       Administrator
@@ -1509,7 +1509,7 @@
                       </div>
                       <div class="logged-user-info-w">
                         <div class="logged-user-name">
-                          Maria Gomez
+                          {{ user.username }}
                         </div>
                         <div class="logged-user-role">
                           Administrator
@@ -1623,10 +1623,10 @@
                         <div class="col-sm-4 col-xxxl-3">
                           <a class="element-box el-tablo" href="#">
                             <div class="label">
-                              New Customers
+                              Total User
                             </div>
                             <div class="value">
-                              125
+                              {{ count }}
                             </div>
                             <div class="trending trending-down-basic">
                               <span>9%</span><i class="os-icon os-icon-arrow-down"></i>
