@@ -6,7 +6,7 @@ from rest_project import views
 
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('admin/', views.home, name='home'),
     path('signup/', views.signup, name='signup'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('create_hub/', views.hub, name='hub'),
