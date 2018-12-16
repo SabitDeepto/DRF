@@ -52,13 +52,13 @@
                 <input class="form-control" type="checkbox">
               </th>
               <th>
-                Customer Name
+                Ambassador Name
               </th>
               <th>
-                Country
+                Email
               </th>
               <th>
-                Order Total
+                Phone Number
               </th>
               <th>
                 Referral
@@ -72,18 +72,19 @@
             </tr>
           </thead>
           <tbody>
+          {% for name in list %}
             <tr>
               <td class="text-center">
                 <input class="form-control" type="checkbox">
               </td>
               <td>
-                John Mayers
-              </td>
-              <td>
-                <img alt="" src="img/flags-icons/us.png" width="25px">
+                {{ name.ambassador_name }}
               </td>
               <td class="text-right">
-                $245
+                {{ name.email }}
+              </td>
+              <td class="text-right">
+                {{ name.phone }}
               </td>
               <td>
                 Organic
@@ -95,98 +96,8 @@
                 <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
               </td>
             </tr>
-            <tr>
-              <td class="text-center">
-                <input class="form-control" type="checkbox">
-              </td>
-              <td>
-                Mike Astone
-              </td>
-              <td>
-                <img alt="" src="img/flags-icons/fr.png" width="25px">
-              </td>
-              <td class="text-right">
-                $154
-              </td>
-              <td>
-                Organic
-              </td>
-              <td class="text-center">
-                <div class="status-pill red" data-title="Cancelled" data-toggle="tooltip"></div>
-              </td>
-              <td class="row-actions">
-                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-center">
-                <input class="form-control" type="checkbox">
-              </td>
-              <td>
-                Kira Knight
-              </td>
-              <td>
-                <img alt="" src="img/flags-icons/us.png" width="25px">
-              </td>
-              <td class="text-right">
-                $23
-              </td>
-              <td>
-                Adwords
-              </td>
-              <td class="text-center">
-                <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
-              </td>
-              <td class="row-actions">
-                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-center">
-                <input class="form-control" type="checkbox">
-              </td>
-              <td>
-                Jessica Bloom
-              </td>
-              <td>
-                <img alt="" src="img/flags-icons/ca.png" width="25px">
-              </td>
-              <td class="text-right">
-                $112
-              </td>
-              <td>
-                Organic
-              </td>
-              <td class="text-center">
-                <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
-              </td>
-              <td class="row-actions">
-                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-center">
-                <input class="form-control" type="checkbox">
-              </td>
-              <td>
-                Gary Lineker
-              </td>
-              <td>
-                <img alt="" src="img/flags-icons/ca.png" width="25px">
-              </td>
-              <td class="text-right">
-                $64
-              </td>
-              <td>
-                Organic
-              </td>
-              <td class="text-center">
-                <div class="status-pill yellow" data-title="Pending" data-toggle="tooltip"></div>
-              </td>
-              <td class="row-actions">
-                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
-              </td>
-            </tr>
+          {% endfor %}
+
           </tbody>
         </table>
       </div>

@@ -22,8 +22,7 @@ ALLOWED_HOSTS = [
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 INSTALLED_APPS = [
-    'jet.dashboard',
-    'jet',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,7 +36,7 @@ INSTALLED_APPS = [
     'Manage_Merchants',
     'Manage_Ambassador',
     'Manage_Fulfillment_Department',
-    'crispy_forms',
+
 
 
 

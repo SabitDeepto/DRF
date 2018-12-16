@@ -46,14 +46,6 @@ def handle_pickup_request(request):
     return render(request, 'forms_regular.html', {'name': 'Call Centre Executive Registration'})
 
 
-def create_ambassador(request):
-    return render(request, 'forms_regular.html', {'name': 'ambassador'})
-
-
-def assigned_ambassador(request):
-    return render(request, 'tables_regular.html', {'name': 'ambassador'})
-
-
 def fulfill_manager(request):
     return render(request, 'forms_regular.html', {'name': 'Fulfill Manager Registration '})
 

@@ -10,61 +10,66 @@
         {{ name }} Form
       </h6>
       <div class="element-box">
-        <form>
+        <form action="{% url 'add' %}" method="POST">
+            {% csrf_token %}
+
             <div class="form-group">
-            <label for=""> Business Name</label><input class="form-control" placeholder="Enter your business name" type="text">
+            <label for=""> Ambassador Name</label>{{ form.ambassador_name }}
           </div>
+
             <div class="form-group">
-            <label for=""> Phone Number</label><input class="form-control" placeholder="Enter phone number" type="text">
+            <label for=""> Email address</label>{{ form.email }}
           </div>
 
-          <div class="form-group">
-            <label for=""> Email address</label><input class="form-control" placeholder="Enter email" type="email">
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for=""> Password</label><input class="form-control" placeholder="Password" type="password">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="">Confirm Password</label><input class="form-control" placeholder="Password" type="password">
-              </div>
-            </div>
-          </div>
-              <div class="form-group">
-            <label for=""> Owner Name</label><input class="form-control" placeholder=" owner" type="text">
-          </div>
-              <div class="form-group">
-            <label for=""> Operation</label><input class="form-control" placeholder=" operation status " type="text">
+            <div class="form-group">
+            <label for=""> Phone Number</label>{{ form.phone }}
           </div>
 
-              <div class="form-group">
-              <label>Address</label><textarea class="form-control" rows="3"></textarea>
-            </div>
 
-          <div class="form-group">
-            <label for=""> Payment Type</label><select class="form-control">
-              <option>
-                Cash
-              </option>
-              <option>
-                Card
-              </option>
-              <option>
-                Mobile Bank
-              </option>
-              <option>
-                Wallet
-              </option>
-
-            </select>
-          </div>
-
-          <div class="form-check">
-            <label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to terms and conditions</label>
-          </div>
+{#          <div class="row">#}
+{#            <div class="col-sm-6">#}
+{#              <div class="form-group">#}
+{#                <label for=""> Password</label><input class="form-control" placeholder="Password" type="password">#}
+{#              </div>#}
+{#            </div>#}
+{#            <div class="col-sm-6">#}
+{#              <div class="form-group">#}
+{#                <label for="">Confirm Password</label><input class="form-control" placeholder="Password" type="password">#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{#              <div class="form-group">#}
+{#            <label for=""> Owner Name</label><input class="form-control" placeholder=" owner" type="text">#}
+{#          </div>#}
+{#              <div class="form-group">#}
+{#            <label for=""> Operation</label><input class="form-control" placeholder=" operation status " type="text">#}
+{#          </div>#}
+{##}
+{#              <div class="form-group">#}
+{#              <label>Address</label><textarea class="form-control" rows="3"></textarea>#}
+{#            </div>#}
+{##}
+{#          <div class="form-group">#}
+{#            <label for=""> Payment Type</label><select class="form-control">#}
+{#              <option>#}
+{#                Cash#}
+{#              </option>#}
+{#              <option>#}
+{#                Card#}
+{#              </option>#}
+{#              <option>#}
+{#                Mobile Bank#}
+{#              </option>#}
+{#              <option>#}
+{#                Wallet#}
+{#              </option>#}
+{##}
+{#            </select>#}
+{#          </div>#}
+{##}
+{#          <div class="form-check">#}
+{#            <label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to terms and conditions</label>#}
+{#          </div>#}
           <div class="form-buttons-w">
             <button class="btn btn-primary" type="submit"> Submit</button>
           </div>
