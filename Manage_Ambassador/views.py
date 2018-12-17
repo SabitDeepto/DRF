@@ -12,12 +12,9 @@ def ambassador_list(request):
 def create_ambassador(request):
     form = AmbassadorForm(request.POST)
     if form.is_valid():
-        ambassador = CreateAmbassador(ambassador_name=request.POST['ambassador_name'],
-                                      phone=request.POST['phone'],
-                                      email=request.POST['email'])
-
-        ambassador.save()
+        ambassador = form.save()
         return redirect('ambassador_list')
+
     return render(request, 'forms_regular.html', {'form': form})
 
 
