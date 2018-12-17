@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Manage_Ambassador/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manage_Ambassador/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Manage_Ambassador/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manage_Ambassador/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms_regular.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms_regular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tables_regular.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tables_regular.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manage_Ambassador/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -49,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manage_Ambassador/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -58,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Manage_Ambassador/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+            <state relative-caret-position="300">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -70,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Manage_Ambassador/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/tables_regular.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="240">
+              <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -139,7 +137,6 @@
       <find>sales</find>
       <find>table in</find>
       <find>order</find>
-      <find>table in</find>
       <find>Table</find>
       <find>welcome</find>
       <find>Dashboard</find>
@@ -151,6 +148,7 @@
       <find>inven</find>
       <find>recent order</find>
       <find>availa</find>
+      <find>archive</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,10 +204,10 @@
         <option value="$PROJECT_DIR$/rest_project/views.py" />
         <option value="$PROJECT_DIR$/Manage_Ambassador/forms.py" />
         <option value="$PROJECT_DIR$/templates/forms_regular.html" />
-        <option value="$PROJECT_DIR$/Manage_Ambassador/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/tables_regular.html" />
         <option value="$PROJECT_DIR$/Manage_Ambassador/views.py" />
+        <option value="$PROJECT_DIR$/Manage_Ambassador/urls.py" />
+        <option value="$PROJECT_DIR$/templates/tables_regular.html" />
       </list>
     </option>
   </component>
@@ -339,7 +337,7 @@
       <workItem from="1544563507232" duration="14119000" />
       <workItem from="1544859427975" duration="11678000" />
       <workItem from="1544928745958" duration="9029000" />
-      <workItem from="1545023071234" duration="5938000" />
+      <workItem from="1545023071234" duration="12058000" />
     </task>
     <task id="LOCAL-00001" summary="without viewset">
       <created>1541405305807</created>
@@ -352,10 +350,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118591000" />
+    <option name="totallyTimeSpent" value="124711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="25" width="1320" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1734694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -371,7 +370,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.9514563" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151515" side_tool="true" weight="0.22006473" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.21359223" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.25080907" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.34951457" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -380,7 +379,7 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32810047" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21439394" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1734694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -392,15 +391,15 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3272727" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5009488" side_tool="true" weight="0.32053423" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.080906145" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.16694215" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.9514563" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151515" side_tool="true" weight="0.22006473" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.25080907" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.34951457" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32967892" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32811275" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32810047" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,6 +673,13 @@
     <entry file="file://$PROJECT_DIR$/Manage_Ambassador/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="958" column="22" lean-forward="true" selection-start-line="958" selection-start-column="22" selection-end-line="958" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forms_regular.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -686,22 +692,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage_Ambassador/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="958" column="22" lean-forward="true" selection-start-line="958" selection-start-column="22" selection-end-line="958" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage_Ambassador/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#1#29#0" expanded="true" />
           </folding>
@@ -710,22 +709,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tables_regular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="240">
+          <caret line="101" column="16" lean-forward="true" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage_Ambassador/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage_Ambassador/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+        <state relative-caret-position="300">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
