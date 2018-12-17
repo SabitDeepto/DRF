@@ -1,3 +1,8 @@
+```diff
++ Python
+- Django
+- Django Rest Framework
+```
 # TikTok Project (Running)
 
 ## admin login (localhost/admin)

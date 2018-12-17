@@ -5,8 +5,8 @@ from Manage_Ambassador import views
 
 urlpatterns = [
     path('', views.create_ambassador, name='create_ambassador'),
-    path('add', views.ambassador_list, name='add'),
-    path('lists', views.amb_list, name='lists'),
+    path('list', views.ambassador_list, name='ambassador_list'),
+
 
 
 ]
