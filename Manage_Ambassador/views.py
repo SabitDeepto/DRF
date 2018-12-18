@@ -10,12 +10,15 @@ def ambassador_list(request):
 
 
 def create_ambassador(request):
-    form = AmbassadorForm(request.POST)
+    form = AmbassadorForm(request.POST or None)
     if form.is_valid():
-        ambassador = form.save()
+        form.save()
         return redirect('ambassador_list')
 
     return render(request, 'forms_regular.html', {'form': form})
+
+
+# def delete(request,id):
 
 
 def delete_ambassador(request):
@@ -23,3 +26,17 @@ def delete_ambassador(request):
     return redirect('ambassador_list')
 
 
+def update(request, id):
+    product = CreateAmbassador.objects.get(id=id)
+    form = AmbassadorForm(request.POST or None, instance=product)
+    if form.is_valid():
+        form.save()
+        return redirect('ambassador_list')
+
+    return render(request, 'forms_regular.html', {'form': form, 'product': product})
+
+
+def delete(request,id):
+    product = CreateAmbassador.objects.get(id=id)
+    product.delete()
+    return redirect('ambassador_list')
