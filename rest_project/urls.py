@@ -3,11 +3,11 @@ from django.urls import path, include
 # from Sign_Up import views
 from rest_project import views
 # from Person import views
-
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     path('dj-admin/', admin.site.urls),
-    path('admin/', views.home, name='home'),
+    path('admin/', login_required(views.home), name='home'),
     path('signup/', views.signup, name='signup'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('ambassador/', include('Manage_Ambassador.urls')),

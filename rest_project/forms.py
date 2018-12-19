@@ -11,13 +11,20 @@ class RegisterForm(UserCreationForm):
     # confirm password field
     password2 = forms.CharField(label="Repeat Your Password")
     email = forms.EmailField(label="Email Address")
-    first_name = forms.CharField(label="Name")
+    first_name = forms.CharField()
     last_name = forms.CharField(label="Surname")
 
     # this sets the order of the fields
     class Meta:
         model = User
         fields = ("first_name", "last_name", "email", "username", "password1", "password2",)
+        widgets = {
+            'first_name': forms.TextInput(
+                attrs={'class': "form-control", 'placeholder': "Enter your name", 'type': "text"}),
+            'password1': forms.PasswordInput(
+                attrs={'class': "form-control", 'placeholder': "Password", 'type': "password"}),
+
+        }
 
     # this redefines the save function to include the fields you added
     def save(self, commit=True):
@@ -29,3 +36,4 @@ class RegisterForm(UserCreationForm):
         if commit:
             user.save()
             return user
+

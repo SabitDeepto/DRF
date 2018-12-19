@@ -1,6 +1,5 @@
 # from rest_framework import serializers
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
@@ -17,7 +16,7 @@ def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            new_user = form.save()
+            form.save()
         return HttpResponseRedirect("./")
     else:
         form = RegisterForm()
