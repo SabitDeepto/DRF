@@ -1,7 +1,10 @@
 # from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
+
+from rest_project.forms import RegisterForm
 
 
 def home(request):
@@ -10,14 +13,25 @@ def home(request):
     return render(request, 'index.html', {'count': count})
 
 
+def register(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            new_user = form.save()
+        return HttpResponseRedirect("./")
+    else:
+        form = RegisterForm()
+    return render(request, 'template/register.html', {'form': form})
+
+
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('login')
     else:
-        form = UserCreationForm()
+        form = RegisterForm()
 
     return render(request, 'registration/signup.html', {'form': form})
 
